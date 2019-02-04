@@ -36,7 +36,7 @@ public class ImageReader {
 
     public static void main(String... args) throws IOException {
 
-        client = new ClarifaiBuilder("efab2d67a6b54615ac45d009b8345606")
+        client = new ClarifaiBuilder("apikey")
                 .buildSync();
         // client.deleteAllInputs().executeSync().get();
       //  readImages();
