@@ -38,8 +38,8 @@ public class ImageReader {
 
         client = new ClarifaiBuilder("apikey")
                 .buildSync();
-        // client.deleteAllInputs().executeSync().get();
-      //  readImages();
+        client.deleteAllInputs().executeSync().get();
+        readImages();
 
         findSimilarWith(clopyImage);
 
